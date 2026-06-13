@@ -139,7 +139,7 @@ const userEmail =
   // API CALL
   const response =
     await axios.post(
-      "http://localhost:8080/api/document/convert-to-pdf",
+      "https://compressits-backend-production.up.railway.app/api/document/convert-to-pdf",
       formData,
       {
         responseType: "blob",
@@ -251,7 +251,7 @@ const userEmail =
       
        const response =
   await axios.post(
-    `http://localhost:8080/api/auth/pdf-convert/${userEmail}`
+    `https://compressits-backend-production.up.railway.app/api/auth/pdf-convert/${userEmail}`
   );
 
 if (
@@ -454,7 +454,7 @@ else {
 
         const response =
           await axios.post(
-            `http://localhost:8080/api/auth/claim-pdf-convert/${userEmail}`
+            `https://compressits-backend-production.up.railway.app/api/auth/claim-pdf-convert/${userEmail}`
           );
 
         toast.success(

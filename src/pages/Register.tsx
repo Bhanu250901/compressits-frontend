@@ -96,7 +96,7 @@ setSuccess(false);
 
       // SAVE USER IN BACKEND
       await axios.post(
-  "http://localhost:8080/api/auth/register",
+  "https://compressits-backend-production.up.railway.app/api/auth/register",
   {
     name,
     email,
@@ -153,7 +153,7 @@ setSuccess(false);
 
       // SAVE USER IN BACKEND
       await axios.post(
-        "http://localhost:8080/api/auth/register",
+        "https://compressits-backend-production.up.railway.app/api/auth/register",
         {
           name:
             user.displayName,

@@ -55,7 +55,7 @@ export default function Navbar() {
 
         const response =
           await axios.get(
-            `http://localhost:8080/api/auth/user/${user}`
+            `https://compressits-backend-production.up.railway.app/api/auth/user/${user}`
           );
 
         setCoins(

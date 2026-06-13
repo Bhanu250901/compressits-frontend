@@ -25,7 +25,7 @@ export default function AdminWithdraws() {
 
       const response =
         await axios.get(
-          "http://localhost:8080/api/auth/withdraw-requests"
+          "https://compressits-backend-production.up.railway.app/api/auth/withdraw-requests"
         );
 
       setRequests(
@@ -66,7 +66,7 @@ const approveRequest =
 
     const response =
      await axios.post(
-  `http://localhost:8080/api/auth/approve-withdraw/${id}/${couponCode}`
+  `https://compressits-backend-production.up.railway.app/api/auth/approve-withdraw/${id}/${couponCode}`
 );
 
     toast.success(
@@ -95,7 +95,7 @@ const approveRequest =
 
       const response =
         await axios.post(
-          `http://localhost:8080/api/auth/reject-withdraw/${id}`
+          `https://compressits-backend-production.up.railway.app/api/auth/reject-withdraw/${id}`
         );
 
       toast.success(

@@ -18,7 +18,7 @@ export default function Leaderboard() {
 
     axios
       .get(
-        "http://localhost:8080/api/auth/leaderboard"
+        "https://compressits-backend-production.up.railway.app/api/auth/leaderboard"
       )
       .then((response) => {
 

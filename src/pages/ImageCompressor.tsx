@@ -259,7 +259,7 @@ const handleDownload =
    
       const response =
   await axios.post(
-    `http://localhost:8080/api/auth/image-compress/${userEmail}`
+    `https://compressits-backend-production.up.railway.app/api/auth/image-compress/${userEmail}`
   );
 
 if (
@@ -535,7 +535,7 @@ if (
 
         const response =
           await axios.post(
-            `http://localhost:8080/api/auth/claim-image-compress/${userEmail}`
+            `https://compressits-backend-production.up.railway.app/api/auth/claim-image-compress/${userEmail}`
           );
 
         toast.success(

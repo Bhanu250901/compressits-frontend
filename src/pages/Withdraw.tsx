@@ -35,7 +35,7 @@ export default function Withdraw() {
       return;
 
     axios
-  .get(`http://localhost:8080/api/auth/user/${userEmail}`)
+  .get(`https://compressits-backend-production.up.railway.app/api/auth/user/${userEmail}`)
   .then((response) => {
 
     setUser(response.data);
@@ -68,7 +68,7 @@ export default function Withdraw() {
 
       const response =
         await axios.post(
-          "http://localhost:8080/api/auth/withdraw",
+          "https://compressits-backend-production.up.railway.app/api/auth/withdraw",
           {
             userEmail,
             coins: parseInt(rewardType),

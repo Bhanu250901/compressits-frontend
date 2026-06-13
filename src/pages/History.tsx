@@ -42,7 +42,7 @@ const [copied,
 
     axios
   .get(
-    `http://localhost:8080/api/auth/coin-history/${userEmail}`
+    `https://compressits-backend-production.up.railway.app/api/auth/coin-history/${userEmail}`
   )
   .then((response) => {
 
@@ -55,7 +55,7 @@ const [copied,
     // WITHDRAWS
     axios
       .get(
-        "http://localhost:8080/api/auth/withdraw-requests"
+        "https://compressits-backend-production.up.railway.app/api/auth/withdraw-requests"
       )
       .then((response) => {
 

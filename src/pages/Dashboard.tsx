@@ -59,7 +59,7 @@ export default function Dashboard() {
 
       axios
         .get(
-          "http://localhost:8080/api/auth/all-users"
+          "https://compressits-backend-production.up.railway.app/api/auth/all-users"
         )
         .then((response) => {
 
@@ -69,7 +69,7 @@ export default function Dashboard() {
 
         axios
   .get(
-    "http://localhost:8080/api/auth/withdraw-requests"
+    "https://compressits-backend-production.up.railway.app/api/auth/withdraw-requests"
   )
   .then((response) => {
 
@@ -93,7 +93,7 @@ export default function Dashboard() {
 
       axios
         .get(
-          `http://localhost:8080/api/auth/user/${userEmail}`
+          `https://compressits-backend-production.up.railway.app/api/auth/user/${userEmail}`
         )
         .then((response) => {
 
@@ -152,7 +152,7 @@ export default function Dashboard() {
 
       const response =
         await axios.post(
-          `http://localhost:8080/api/auth/daily-reward/${userEmail}`
+          `https://compressits-backend-production.up.railway.app/api/auth/daily-reward/${userEmail}`
         );
 
       toast.success(
@@ -164,7 +164,7 @@ export default function Dashboard() {
       // REFRESH USER
       const updatedUser =
         await axios.get(
-          `http://localhost:8080/api/auth/user/${userEmail}`
+          `https://compressits-backend-production.up.railway.app/api/auth/user/${userEmail}`
         );
 
       setCurrentUser(
@@ -216,7 +216,7 @@ export default function Dashboard() {
     try {
 
       await axios.post(
-        `http://localhost:8080/api/auth/approve-withdraw/${id}/${couponCode}`
+        `https://compressits-backend-production.up.railway.app/api/auth/approve-withdraw/${id}/${couponCode}`
       );
 
       toast.success(
@@ -241,7 +241,7 @@ const rejectRequest =
     try {
 
       await axios.post(
-        `http://localhost:8080/api/auth/reject-withdraw/${id}`
+        `https://compressits-backend-production.up.railway.app/api/auth/reject-withdraw/${id}`
       );
 
       toast.success(
@@ -724,7 +724,7 @@ const rejectRequest =
 
         const response =
           await axios.post(
-            `http://localhost:8080/api/auth/apply-referral/${userEmail}/${referralCode}`
+            `https://compressits-backend-production.up.railway.app/api/auth/apply-referral/${userEmail}/${referralCode}`
           );
 
         toast.success(

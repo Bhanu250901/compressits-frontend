@@ -200,7 +200,7 @@ const userEmail =
       
        const response =
   await axios.post(
-    `http://localhost:8080/api/auth/image-convert/${userEmail}`
+    `https://compressits-backend-production.up.railway.app/api/auth/image-convert/${userEmail}`
   );
 
 if (
@@ -365,7 +365,7 @@ else {
 
         const response =
           await axios.post(
-            `http://localhost:8080/api/auth/claim-image-convert/${userEmail}`
+            `https://compressits-backend-production.up.railway.app/api/auth/claim-image-convert/${userEmail}`
           );
 
         toast.success(

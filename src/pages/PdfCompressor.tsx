@@ -235,7 +235,7 @@ const userEmail =
       
         const response =
   await axios.post(
-    `http://localhost:8080/api/auth/pdf-compress/${userEmail}`
+    `https://compressits-backend-production.up.railway.app/api/auth/pdf-compress/${userEmail}`
   );
 
 if (
@@ -439,7 +439,7 @@ else {
 
         const response =
           await axios.post(
-            `http://localhost:8080/api/auth/claim-pdf-compress/${userEmail}`
+            `https://compressits-backend-production.up.railway.app/api/auth/claim-pdf-compress/${userEmail}`
           );
 
           console.log(response.data);
