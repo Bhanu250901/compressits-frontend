@@ -45,18 +45,18 @@ const [success, setSuccess] =
       );
 
     // CHECK EMAIL VERIFIED
-    if (
-      !userCredential.user
-        .emailVerified
-    ) {
+//     if (
+//       !userCredential.user
+//         .emailVerified
+//     ) {
 
-      setMessage(
-  "Please verify your email before login!"
-);
+//       setMessage(
+//   "Please verify your email before login!"
+// );
 
-setSuccess(false);
-      return;
-    }
+// setSuccess(false);
+//       return;
+//     }
 
     // YOUR EXISTING BACKEND LOGIN
    
