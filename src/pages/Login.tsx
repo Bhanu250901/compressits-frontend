@@ -37,7 +37,7 @@ const [success, setSuccess] =
   try {
 
     // FIREBASE LOGIN
-    const userCredential =
+    
       await signInWithEmailAndPassword(
         auth,
         email,
