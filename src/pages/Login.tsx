@@ -87,12 +87,12 @@ setSuccess(true);
     "/dashboard";
 
 }, 1000);
-  } catch (error) {
+ } catch (error: any) {
 
   console.log(error);
 
   setMessage(
-    "Invalid Credentials"
+    error.message
   );
 
   setSuccess(false);
