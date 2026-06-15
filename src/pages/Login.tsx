@@ -82,28 +82,28 @@ const [success, setSuccess] =
   try {
 
     // FIREBASE LOGIN
-    
+    const userCredential =
       await signInWithEmailAndPassword(
         auth,
         email,
         password
       );
 
-    // CHECK EMAIL VERIFIED
-//     if (
-//       !userCredential.user
-//         .emailVerified
-//     ) {
+    //CHECK EMAIL VERIFIED
+    if (
+      !userCredential.user
+        .emailVerified
+    ) {
 
-//       setMessage(
-//   "Please verify your email before login!"
-// );
+      setMessage(
+  "Please verify your email before login!"
+);
 
-// setSuccess(false);
-//       return;
-//     }
+setSuccess(false);
+      return;
+    }
 
-    // YOUR EXISTING BACKEND LOGIN
+    //YOUR EXISTING BACKEND LOGIN
    
       await axios.post(
         "https://compressits-backend-production.up.railway.app/api/auth/login",
