@@ -11,7 +11,52 @@ import { auth } from "../firebase";
 
 import { Eye, EyeOff } from "lucide-react";
 
+import {
+  GoogleAuthProvider,
+  signInWithPopup
+} from "firebase/auth";
+
 export default function Login() {
+
+  const handleGoogleLogin = async () => {
+
+  try {
+
+    const provider =
+      new GoogleAuthProvider();
+
+    const result =
+      await signInWithPopup(
+        auth,
+        provider
+      );
+
+    // SAVE USER IN MYSQL
+    await axios.post(
+      "https://compressits-backend-production.up.railway.app/api/auth/google-login",
+      {
+        email: result.user.email,
+        name: result.user.displayName
+      }
+    );
+
+    localStorage.setItem(
+      "userEmail",
+      result.user.email || ""
+    );
+    setMessage("Google Login Successful!");
+setSuccess(true);
+
+    window.location.href =
+      "/dashboard";
+
+  } catch (error) {
+
+    console.log(error);
+
+  }
+
+};
 
   const [email, setEmail] =
     useState("");
@@ -194,6 +239,14 @@ setSuccess(true);
             Login
 
           </button>
+
+          <button
+  type="button"
+  onClick={handleGoogleLogin}
+  className="w-full bg-red-500 text-white py-4 rounded-2xl"
+>
+  Login with Google
+</button>
 
         </form>
 
