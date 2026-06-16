@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://compressit.in/sitemap.xml
+Sitemap: https://compressits.com/sitemap.xml
