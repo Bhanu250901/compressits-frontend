@@ -218,36 +218,27 @@ export default function Navbar() {
             <>
 
               {/* COINS */}
-             <div className="flex items-center gap-2 bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full font-semibold shadow-sm">
-
+<div className="hidden md:flex items-center gap-2 bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full font-semibold shadow-sm">
   <Coins size={16} />
-
   {coins}
-
 </div>
 
-              {/* DASHBOARD */}
-             <Link
+{/* DASHBOARD */}
+<Link
   to="/dashboard"
-  className="flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-50 text-blue-600 hover:bg-blue-100 transition"
+  className="hidden md:flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-50 text-blue-600 hover:bg-blue-100 transition"
 >
-
   <LayoutDashboard size={16} />
-
   Dashboard
-
 </Link>
 
-              {/* LOGOUT */}
-              <button
+{/* LOGOUT */}
+<button
   onClick={handleLogout}
-  className="flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-xl shadow-sm transition"
+  className="hidden md:flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-xl shadow-sm transition"
 >
-
   <LogOut size={16} />
-
   Logout
-
 </button>
 
             </>
