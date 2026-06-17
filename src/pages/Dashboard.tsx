@@ -272,13 +272,13 @@ const rejectRequest =
         {/* HEADER */}
         <div className="bg-white rounded-3xl p-8 shadow-md mb-8">
 
-          <h1 className="text-5xl font-bold mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
 
             Dashboard
 
           </h1>
 
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-base md:text-lg">
 
             Welcome back 👋
 
@@ -637,10 +637,10 @@ const rejectRequest =
         ) : (
 
           // NORMAL USER
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
 
             {/* COINS */}
-            <div className="bg-white rounded-3xl p-8 shadow-md">
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-md">
 
               <div className="flex items-center gap-4 mb-4">
 
@@ -649,7 +649,7 @@ const rejectRequest =
                   size={40}
                 />
 
-                <h2 className="text-3xl font-bold">
+                <h2 className="text-xl md:text-3xl font-bold">
 
                   Coins
 
@@ -657,7 +657,7 @@ const rejectRequest =
 
               </div>
 
-              <p className="text-5xl font-bold text-yellow-600">
+             <p className="text-3xl md:text-5xl font-bold text-yellow-600">
 
                 {currentUser?.coins || 0}
 
@@ -666,7 +666,7 @@ const rejectRequest =
             </div>
 
             {/* PROFILE */}
-            <div className="bg-white rounded-3xl p-8 shadow-md">
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-md">
 
               <div className="flex items-center gap-4 mb-4">
 
@@ -683,7 +683,7 @@ const rejectRequest =
 
               </div>
 
-              <p className="text-xl text-gray-700 mb-2">
+              <p className="text-lg md:text-xl text-gray-700 mb-2">
 
                 {currentUser?.name}
 
@@ -756,7 +756,7 @@ const rejectRequest =
             </div>
 
             {/* DAILY REWARD */}
-            <div className="bg-white rounded-3xl p-8 shadow-md">
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-md">
 
               <h2 className="text-3xl font-bold mb-4">
 
@@ -773,7 +773,7 @@ const rejectRequest =
               <button
                 onClick={claimDailyReward}
                 disabled={dailyClaimed}
-                className={`w-full py-4 rounded-2xl text-lg font-semibold transition ${
+                className={`w-full py-3 md:py-4 rounded-xl text-base md:text-lg font-semibold transition ${
                   dailyClaimed
                     ? "bg-gray-300 text-gray-600 cursor-not-allowed"
                     : "bg-green-600 hover:bg-green-700 text-white"
