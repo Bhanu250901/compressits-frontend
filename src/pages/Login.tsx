@@ -16,6 +16,8 @@ import {
   signInWithPopup
 } from "firebase/auth";
 
+const navigate = useNavigate();
+
 export default function Login() {
 
   const handleGoogleLogin = async () => {
@@ -127,7 +129,7 @@ setSuccess(true);
     );
 
     // REDIRECT
-    const navigate = useNavigate();
+    
   navigate("/dashboard");
  } catch (error: any) {
 
