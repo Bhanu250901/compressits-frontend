@@ -83,20 +83,55 @@ const userEmail =
         image.onload =
           async () => {
 
-          const pdf =
-            new jsPDF();
+          const pdf = new jsPDF({
+  orientation:
+    image.width > image.height
+      ? "landscape"
+      : "portrait",
+  unit: "mm",
+  format: "a4",
+});
 
-          pdf.addImage(
-            image,
-            "JPEG",
-            10,
-            10,
-            180,
-            160
-          );
+const pageWidth =
+  pdf.internal.pageSize.getWidth();
 
-          const blob =
-            pdf.output("blob");
+const pageHeight =
+  pdf.internal.pageSize.getHeight();
+
+const imgRatio =
+  image.width / image.height;
+
+const pageRatio =
+  pageWidth / pageHeight;
+
+let imgWidth;
+let imgHeight;
+
+if (imgRatio > pageRatio) {
+  imgWidth = pageWidth;
+  imgHeight = pageWidth / imgRatio;
+} else {
+  imgHeight = pageHeight;
+  imgWidth = pageHeight * imgRatio;
+}
+
+const x =
+  (pageWidth - imgWidth) / 2;
+
+const y =
+  (pageHeight - imgHeight) / 2;
+
+pdf.addImage(
+  image,
+  "JPEG",
+  x,
+  y,
+  imgWidth,
+  imgHeight
+);
+
+const blob =
+  pdf.output("blob");
 
           setPdfBlob(blob);
 
@@ -376,9 +411,7 @@ else {
           {/* CONVERT TYPE */}
           <div className="mb-8">
 
-            <h1 className="text-6xl font-bold mb-6">
-  Image to PDF Converter
-</h1>
+            
 
             {/* <label className="block text-lg font-semibold mb-3">
 
