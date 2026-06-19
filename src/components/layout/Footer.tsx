@@ -195,28 +195,29 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-5">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
 
-          <p className="text-sm text-gray-500">
+          <p className="text-xs md:text-sm text-gray-500 text-center">
 
             © 2026 compressits.
             All rights reserved.
 
           </p>
 
-          <p className="text-sm text-gray-500 flex items-center gap-2">
+          <p className="text-xs md:text-sm text-gray-500 flex flex-wrap items-center justify-center gap-2 text-center">
 
-            Made with
+  Made with
 
-            <Heart
-              size={16}
-              className="text-red-500"
-            />
+  <Heart
+    size={16}
+    className="text-red-500"
+  />
 
-            Files are automatically deleted after processing
+  <span>
+    Files are automatically deleted after processing
+  </span>
 
-          </p>
-
+</p>
         </div>
 
       </div>
