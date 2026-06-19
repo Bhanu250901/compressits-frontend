@@ -72,10 +72,10 @@ export default function Home() {
             </a>
 
             <a
-              href="/document-convert"
+              href="/convert"
               className="px-10 py-5 border-2 border-gray-800 hover:bg-gray-900 hover:text-white text-xl font-semibold rounded-3xl transition-all"
             >
-              Convert PDF
+              Image Convert to JPG-PNG-WEBP
             </a>
 
           </div>
