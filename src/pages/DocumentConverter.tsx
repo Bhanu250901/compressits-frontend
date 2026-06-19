@@ -365,7 +365,7 @@ else {
 </h1>
 
 <p className="text-gray-600 text-2xl">
-  Convert Word, Excel, PPT and Images to PDF
+  Convert JPG, PNG and Images to PDF instantly
 </p>
 
         </div>
@@ -376,11 +376,15 @@ else {
           {/* CONVERT TYPE */}
           <div className="mb-8">
 
-            <label className="block text-lg font-semibold mb-3">
+            <h1 className="text-6xl font-bold mb-6">
+  Image to PDF Converter
+</h1>
+
+            {/* <label className="block text-lg font-semibold mb-3">
 
               Convert Type
 
-            </label>
+            </label> */}
 
             <select
               value={convertType}
@@ -398,7 +402,7 @@ else {
 
               </option>
 
-              <option value="excel-to-pdf">
+              {/* <option value="excel-to-pdf">
 
                 Excel → PDF
 
@@ -414,7 +418,7 @@ else {
 
                 PPT → PDF
 
-              </option>
+              </option> */}
 
             </select>
 
