@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import { Link } from "react-router-dom";
@@ -21,6 +21,7 @@ export default function Login() {
   const handleGoogleLogin = async () => {
 
   try {
+    
 
     const provider =
       new GoogleAuthProvider();
@@ -126,19 +127,46 @@ setSuccess(true);
     );
 
     // REDIRECT
-   setTimeout(() => {
-
-  window.location.href =
-    "/dashboard";
-
-}, 1000);
+    const navigate = useNavigate();
+  navigate("/dashboard");
  } catch (error: any) {
 
   console.log(error);
 
-  setMessage(
-    error.message
-  );
+  if (
+    error.code === "auth/invalid-credential"
+  ) {
+
+    setMessage(
+      "Invalid email or password."
+    );
+
+  }
+  else if (
+    error.code === "auth/user-not-found"
+  ) {
+
+    setMessage(
+      "Account not found."
+    );
+
+  }
+  else if (
+    error.code === "auth/wrong-password"
+  ) {
+
+    setMessage(
+      "Incorrect password."
+    );
+
+  }
+  else {
+
+    setMessage(
+      "Login failed. Please try again."
+    );
+
+  }
 
   setSuccess(false);
 }
@@ -161,7 +189,7 @@ setSuccess(true);
           {message && (
 
   <div
-    className={`text-center p-3 rounded-xl mb-4 font-medium ${
+  className={`text-center px-4 py-3 rounded-lg mb-4 text-sm font-medium ${
       success
         ? "bg-green-100 text-green-700"
         : "bg-red-100 text-red-700"
