@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
 
 import { Link } from "react-router-dom";
@@ -16,14 +16,11 @@ import {
   signInWithPopup
 } from "firebase/auth";
 
-const navigate = useNavigate();
-
 export default function Login() {
 
   const handleGoogleLogin = async () => {
 
   try {
-    
 
     const provider =
       new GoogleAuthProvider();
@@ -129,8 +126,12 @@ setSuccess(true);
     );
 
     // REDIRECT
-    
-  navigate("/dashboard");
+   setTimeout(() => {
+
+  window.location.href =
+    "/dashboard";
+
+}, 1000);
  } catch (error: any) {
 
   console.log(error);
@@ -145,20 +146,20 @@ setSuccess(true);
 
   }
   else if (
-    error.code === "auth/user-not-found"
+    error.code === "auth/invalid-email"
   ) {
 
     setMessage(
-      "Account not found."
+      "Please enter a valid email address."
     );
 
   }
   else if (
-    error.code === "auth/wrong-password"
+    error.code === "auth/too-many-requests"
   ) {
 
     setMessage(
-      "Incorrect password."
+      "Too many attempts. Try again later."
     );
 
   }
@@ -191,7 +192,7 @@ setSuccess(true);
           {message && (
 
   <div
-  className={`text-center px-4 py-3 rounded-lg mb-4 text-sm font-medium ${
+    className={`text-center p-3 rounded-xl mb-4 font-medium ${
       success
         ? "bg-green-100 text-green-700"
         : "bg-red-100 text-red-700"
