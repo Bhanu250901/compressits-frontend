@@ -52,8 +52,6 @@ import PdfCompressor from "./pages/PdfCompressor";
 import DocumentConverter from "./pages/DocumentConverter";
 
 
-import JpgToPng from "./pages/JpgToPng";
-import PngToWebp from "./pages/PngToWebp";
 
 function App() {
   return (
@@ -190,16 +188,7 @@ function App() {
   element={<DocumentConverter />}
 />
            
-            <Route
-              path="/jpg-to-png"
-              element={<JpgToPng />}
-            />
-
-            <Route
-              path="/png-to-webp"
-              element={<PngToWebp />}
-            />
-
+           
             {/* 404 Page */}
             <Route
   path="*"
