@@ -184,22 +184,22 @@ const userEmail =
 }
     } catch (error: any) {
 
-  console.log("FULL ERROR:", error);
+  if (error.response?.data instanceof Blob) {
 
-  console.log(
-    "BACKEND RESPONSE:",
-    error.response?.data
-  );
+    const text =
+      await error.response.data.text();
 
-  console.log(
-    "STATUS:",
-    error.response?.status
-  );
+    console.log("BACKEND ERROR:", text);
 
-  toast.error(
-    error.response?.data ||
-    "Conversion failed!"
-  );
+    toast.error(text);
+
+  } else {
+
+    console.log(error);
+
+    toast.error("Conversion failed!");
+
+  }
 
   setLoading(false);
 }
