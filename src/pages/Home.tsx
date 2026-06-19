@@ -62,23 +62,63 @@ export default function Home() {
             every action.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
 
-            <a
-              href="/image-compress"
-              className="px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-3xl transition-all shadow-lg shadow-blue-200"
-            >
-              Compress Image Now
-            </a>
+  {/* COMPRESS */}
+  <div className="bg-white rounded-3xl shadow-lg p-6">
 
-            <a
-              href="/convert"
-              className="px-10 py-5 border-2 border-gray-800 hover:bg-gray-900 hover:text-white text-xl font-semibold rounded-3xl transition-all"
-            >
-              Image Convert to JPG-PNG-WEBP
-            </a>
+    <h3 className="text-2xl font-bold mb-4">
+      Compress
+    </h3>
 
-          </div>
+    <div className="flex flex-col gap-3">
+
+      <a
+        href="/image-compress"
+        className="bg-blue-600 text-white py-3 rounded-xl text-center font-semibold hover:bg-blue-700"
+      >
+        Image Compress
+      </a>
+
+      <a
+        href="/pdf-compress"
+        className="bg-blue-600 text-white py-3 rounded-xl text-center font-semibold hover:bg-blue-700"
+      >
+        PDF Compress
+      </a>
+
+    </div>
+
+  </div>
+
+  {/* CONVERT */}
+  <div className="bg-white rounded-3xl shadow-lg p-6">
+
+    <h3 className="text-2xl font-bold mb-4">
+      Convert
+    </h3>
+
+    <div className="flex flex-col gap-3">
+
+      <a
+        href="/convert"
+        className="border-2 border-gray-300 py-3 rounded-xl text-center font-semibold hover:bg-gray-100"
+      >
+        Image Convert
+      </a>
+
+      <a
+        href="/document-convert"
+        className="border-2 border-gray-300 py-3 rounded-xl text-center font-semibold hover:bg-gray-100"
+      >
+        PDF Convert
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
         </div>
       </div>
 
