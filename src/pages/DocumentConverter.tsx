@@ -182,16 +182,27 @@ const userEmail =
 
   }
 }
-    } catch (error) {
+    } catch (error: any) {
 
-      console.log(error);
+  console.log("FULL ERROR:", error);
 
-      toast.error(
-        "Conversion failed!"
-      );
+  console.log(
+    "BACKEND RESPONSE:",
+    error.response?.data
+  );
 
-      setLoading(false);
-    }
+  console.log(
+    "STATUS:",
+    error.response?.status
+  );
+
+  toast.error(
+    error.response?.data ||
+    "Conversion failed!"
+  );
+
+  setLoading(false);
+}
   };
 
   // HANDLE DOWNLOAD
