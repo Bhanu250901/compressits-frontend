@@ -1,8 +1,52 @@
 import { Link } from "react-router-dom";
 
+import { Helmet } from "react-helmet-async";
+
 export default function JpgVsPngVsWebp() {
 
-  return (
+   return (
+    <>
+      <Helmet>
+        <title>
+          JPG vs PNG vs WEBP | CompressIts Blog
+        </title>
+
+        <meta
+          name="description"
+          content="Learn the difference between JPG, PNG and WEBP image formats. Compare quality, transparency, file size and find the best format for websites, SEO and image optimization."
+        />
+
+        <meta
+          name="keywords"
+          content="JPG vs PNG vs WEBP, image formats, webp vs png, jpg vs png, best image format for website, compressits blog"
+        />
+
+        <meta
+          property="og:title"
+          content="JPG vs PNG vs WEBP | CompressIts Blog"
+        />
+
+        <meta
+          property="og:description"
+          content="Compare JPG, PNG and WEBP image formats by quality, file size, transparency and website performance."
+        />
+
+        <meta
+          property="og:type"
+          content="article"
+        />
+
+        <meta
+          property="og:url"
+          content="https://compressits.com/blog/jpg-vs-png-vs-webp"
+        />
+
+        <link
+          rel="canonical"
+          href="https://compressits.com/blog/jpg-vs-png-vs-webp"
+        />
+      </Helmet>
+
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-purple-50 py-20 px-6">
 
@@ -255,6 +299,6 @@ export default function JpgVsPngVsWebp() {
       </div>
 
     </div>
-
+</>
   );
 }

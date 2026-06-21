@@ -16,6 +16,8 @@ import {
   signInWithPopup
 } from "firebase/auth";
 
+import { Helmet } from "react-helmet-async";
+
 export default function Login() {
 
   const handleGoogleLogin = async () => {
@@ -176,9 +178,13 @@ setSuccess(true);
 };
 
   return (
+  <>
+    <Helmet>
+      <title>Login | CompressIts</title>
+      <meta name="robots" content="noindex, nofollow" />
+    </Helmet>
 
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-6">
-
       <div className="bg-white rounded-3xl shadow-xl p-10 w-full max-w-md">
 
         <h1 className="text-4xl font-bold text-center mb-8">
@@ -299,5 +305,6 @@ setSuccess(true);
       </div>
 
     </div>
+    </>
   );
 }

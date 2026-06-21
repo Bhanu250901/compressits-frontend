@@ -7,10 +7,48 @@ import {
   Globe,
 } from "lucide-react";
 
+import { Helmet } from "react-helmet-async";
+
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-50 py-20 px-6">
+    <>
+      <Helmet>
+        <title>
+          About CompressIts | Free Image Compression & PDF Tools
+        </title>
 
+        <meta
+          name="description"
+          content="Learn about CompressIts, a free online platform for image compression, PDF compression, image conversion and image to PDF tools. Fast, secure and mobile friendly."
+        />
+
+        <meta
+          name="keywords"
+          content="about compressits, image compressor, pdf compressor, image converter, image to pdf, free file tools"
+        />
+
+        <meta
+          property="og:title"
+          content="About CompressIts"
+        />
+
+        <meta
+          property="og:description"
+          content="CompressIts helps users compress images, compress PDFs, convert image formats and turn images into PDFs quickly and securely."
+        />
+
+        <meta
+          property="og:url"
+          content="https://compressits.com/about"
+        />
+
+        <link
+          rel="canonical"
+          href="https://compressits.com/about"
+        />
+      </Helmet>
+
+      <div className="min-h-screen bg-gray-50 py-20 px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -148,6 +186,7 @@ export default function About() {
       </div>
 
     </div>
+    </>
   );
 }
 

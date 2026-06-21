@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function Blog() {
 
@@ -85,13 +86,83 @@ export default function Blog() {
    content:
     "Improve website performance through image optimization, caching and efficient file delivery. Faster websites create better user experiences and higher SEO rankings."
 
+},
+{
+  title: "CompressIts Tools Overview",
+  link: "/blog/tools-overview",
+  icon: "🛠️",
+  content:
+    "Explore all CompressIts tools including image compression, PDF compression, image conversion and file optimization features."
+},
+{
+  title: "How CompressIts Works",
+  link: "/blog/how-it-works",
+  icon: "🚀",
+  content:
+    "Learn how to upload, compress, convert and download files online using CompressIts in a few simple steps."
+},
+{
+  title: "CompressIts Rewards Guide",
+  link: "/blog/rewards-guide",
+  icon: "🪙",
+  content:
+    "Understand how the CompressIts rewards system improves engagement and supports a more interactive file utility experience."
+},
+{
+  title: "Supported File Formats on CompressIts",
+  link: "/blog/supported-formats",
+  icon: "📂",
+  content:
+    "Discover which file formats are supported for image compression, PDF compression and file conversion on CompressIts."
+},
+{
+  title: "CompressIts Referral Program Guide",
+  link: "/blog/referral-program",
+  icon: "🎉",
+  content:
+    "Learn why referral systems matter for online platforms and how they help utility websites grow through user engagement."
 }
   ];
 
   return (
+  <>
+    <Helmet>
+      <title>
+        CompressIts Blog | Image Compression, PDF Tools & File Conversion Guides
+      </title>
+
+      <meta
+        name="description"
+        content="Read CompressIts blog for image compression tips, PDF optimization guides, file conversion tutorials and website performance best practices."
+      />
+
+      <meta
+        name="keywords"
+        content="compressits blog, image compression guide, pdf compression tips, file conversion tutorial, jpg png webp guide, seo image optimization"
+      />
+
+      <meta
+        property="og:title"
+        content="CompressIts Blog - File Compression & Conversion Guides"
+      />
+
+      <meta
+        property="og:description"
+        content="Tips, guides and resources about image compression, PDF optimization, file conversion and website performance."
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/blog"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/blog"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-6">
-
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -188,6 +259,7 @@ export default function Blog() {
       </div>
 
     </div>
+  </>
 
   );
 }

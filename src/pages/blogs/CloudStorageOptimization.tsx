@@ -1,11 +1,53 @@
 import { Link } from "react-router-dom";
 
+import { Helmet } from "react-helmet-async";
+
 export default function CloudStorageOptimization() {
 
   return (
+  <>
+    <Helmet>
+      <title>
+        Cloud Storage Optimization Guide | CompressIts Blog
+      </title>
+
+      <meta
+        name="description"
+        content="Learn how to optimize cloud storage with file compression, better organization, security tips, and storage-saving best practices using CompressIts."
+      />
+
+      <meta
+        name="keywords"
+        content="cloud storage optimization, reduce cloud storage costs, compress files before upload, Google Drive storage tips, Dropbox storage tips, OneDrive storage optimization, CompressIts blog"
+      />
+
+      <meta
+        property="og:title"
+        content="Cloud Storage Optimization Guide | CompressIts Blog"
+      />
+
+      <meta
+        property="og:description"
+        content="Save cloud storage space, reduce costs, and manage files efficiently with this cloud storage optimization guide."
+      />
+
+      <meta
+        property="og:type"
+        content="article"
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/blog/cloud-storage-optimization"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/blog/cloud-storage-optimization"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-sky-50 py-20 px-6">
-
       <div className="max-w-5xl mx-auto">
 
         <div className="bg-white rounded-3xl shadow-xl p-10 mb-10">
@@ -217,5 +259,6 @@ export default function CloudStorageOptimization() {
 
     </div>
 
+</>
   );
 }

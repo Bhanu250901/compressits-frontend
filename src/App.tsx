@@ -34,8 +34,11 @@ import SeoImageOptimization from "./pages/blogs/SeoImageOptimization";
 import PdfSharingTips from "./pages/blogs/PdfSharingTips";
 import CloudStorageOptimization from "./pages/blogs/CloudStorageOptimization";
 import WebsitePerformanceGuide from "./pages/blogs/WebsitePerformanceGuide";
-
-
+import ToolsOverview from "./pages/blogs/ToolsOverview";
+import HowItWorks from "./pages/blogs/HowItWorks";
+import RewardsGuide from "./pages/blogs/RewardsGuide";
+import SupportedFormats from "./pages/blogs/SupportedFormats";
+import ReferralProgramGuide from "./pages/blogs/ReferralProgramGuide";
 
 import Disclaimer from "./pages/Disclaimer";
 import FAQ from "./pages/Faq";
@@ -163,7 +166,11 @@ function App() {
 <Route path="/blog/pdf-sharing-tips" element={<PdfSharingTips />} />
 <Route path="/blog/cloud-storage-optimization" element={<CloudStorageOptimization />} />
 <Route path="/blog/website-performance-guide" element={<WebsitePerformanceGuide />} />
-
+<Route path="/blog/tools-overview" element={<ToolsOverview />} />
+<Route path="/blog/how-it-works" element={<HowItWorks />} />
+<Route path="/blog/rewards-guide" element={<RewardsGuide />} />
+<Route path="/blog/supported-formats" element={<SupportedFormats />} />
+<Route path="/blog/referral-program" element={<ReferralProgramGuide />} />
 
 
             {/* Compressors */}

@@ -1,11 +1,53 @@
 import { Link } from "react-router-dom";
 
+import { Helmet } from "react-helmet-async";
+
 export default function FileSecurityGuide() {
 
-  return (
+return (
+  <>
+    <Helmet>
+      <title>
+        Online File Security Best Practices | CompressIts Blog
+      </title>
+
+      <meta
+        name="description"
+        content="Learn the best practices for online file security, including safe sharing, cloud storage protection, strong passwords, encryption, and privacy tips with CompressIts."
+      />
+
+      <meta
+        name="keywords"
+        content="file security guide, online file security, cloud storage security, secure file sharing, data protection, file privacy, CompressIts blog"
+      />
+
+      <meta
+        property="og:title"
+        content="Online File Security Best Practices | CompressIts Blog"
+      />
+
+      <meta
+        property="og:description"
+        content="Learn how to keep your files safe, private and protected while sharing and storing them online."
+      />
+
+      <meta
+        property="og:type"
+        content="article"
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/blog/file-security-guide"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/blog/file-security-guide"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-cyan-50 py-20 px-6">
-
       <div className="max-w-5xl mx-auto">
 
         <div className="bg-white rounded-3xl shadow-xl p-10 mb-10">
@@ -192,6 +234,7 @@ export default function FileSecurityGuide() {
       </div>
 
     </div>
+    </>
 
   );
 }

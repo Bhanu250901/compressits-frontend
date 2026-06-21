@@ -18,6 +18,8 @@ import {
 
 import { auth } from "../firebase";
 
+import { Helmet } from "react-helmet-async";
+
 export default function Register() {
 
   const navigate =
@@ -220,9 +222,44 @@ setSuccess(false);
     }
 };
   return (
+  <>
+    <Helmet>
+      <title>
+        Create Account | CompressIts
+      </title>
+
+      <meta
+        name="description"
+        content="Create your CompressIts account to compress images, compress PDFs, convert files and earn reward coins online."
+      />
+
+      <meta
+        name="keywords"
+        content="CompressIts register, create account, sign up, image compressor account, pdf compressor account"
+      />
+
+      <meta
+        property="og:title"
+        content="Create Account | CompressIts"
+      />
+
+      <meta
+        property="og:description"
+        content="Sign up for CompressIts to use file compression, image conversion and reward features."
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/register"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/register"
+      />
+    </Helmet>
 
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-6">
-
       <div className="bg-white rounded-3xl shadow-xl p-10 w-full max-w-md">
 
         <h1 className="text-4xl font-bold text-center mb-8">
@@ -415,5 +452,6 @@ setSuccess(false);
       </div>
 
     </div>
+    </>
   );
 }

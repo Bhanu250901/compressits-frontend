@@ -9,6 +9,8 @@ import {
   Trophy
 } from "lucide-react";
 
+import { Helmet } from "react-helmet-async";
+
 export default function Leaderboard() {
 
   const [users, setUsers] =
@@ -35,10 +37,45 @@ export default function Leaderboard() {
 
   }, []);
 
-  return (
+ return (
+  <>
+    <Helmet>
+      <title>
+        Leaderboard | CompressIts
+      </title>
+
+      <meta
+        name="description"
+        content="View the CompressIts leaderboard and see top users ranked by reward coins earned through file compression and conversion."
+      />
+
+      <meta
+        name="keywords"
+        content="CompressIts leaderboard, top users, reward coins, file compression rewards, file conversion rewards"
+      />
+
+      <meta
+        property="og:title"
+        content="Leaderboard | CompressIts"
+      />
+
+      <meta
+        property="og:description"
+        content="Check the top users and reward coin rankings on CompressIts."
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/leaderboard"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/leaderboard"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gray-100 p-6">
-
       <div className="max-w-4xl mx-auto">
 
         <div className="bg-white rounded-3xl shadow-xl p-10">
@@ -68,7 +105,7 @@ export default function Leaderboard() {
 
               <div
                 key={user.id}
-                className="flex items-center justify-between bg-gray-50 rounded-2xl p-6"
+                className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-gray-50 rounded-2xl p-6"
               >
 
                 <div className="flex items-center gap-5">
@@ -121,5 +158,6 @@ export default function Leaderboard() {
       </div>
 
     </div>
+    </>
   );
 }

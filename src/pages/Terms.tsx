@@ -5,12 +5,49 @@ import {
   FileText,
 } from "lucide-react";
 
+import { Helmet } from "react-helmet-async";
+
 export default function Terms() {
 
   return (
+  <>
+    <Helmet>
+      <title>
+        Terms & Conditions | CompressIts
+      </title>
+
+      <meta
+        name="description"
+        content="Read the Terms and Conditions of CompressIts for using file compression, file conversion and reward services."
+      />
+
+      <meta
+        name="keywords"
+        content="CompressIts terms, terms and conditions, file converter terms, image compressor terms, PDF compressor terms"
+      />
+
+      <meta
+        property="og:title"
+        content="Terms & Conditions | CompressIts"
+      />
+
+      <meta
+        property="og:description"
+        content="Review the Terms and Conditions for using CompressIts tools and reward features."
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/terms"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/terms"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gray-50 py-20 px-6">
-
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -150,6 +187,7 @@ export default function Terms() {
       </div>
 
     </div>
+    </>
   );
 }
 

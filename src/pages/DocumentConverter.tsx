@@ -364,17 +364,40 @@ else {
 
 <>
   <Helmet>
+  <title>
+    Image to PDF Converter Online Free | JPG, PNG to PDF - CompressIts
+  </title>
 
-    <title>
-      Free PDF Converter | compressits
-    </title>
+  <meta
+    name="description"
+    content="Convert JPG, PNG and image files to PDF online for free with CompressIts. Fast, secure and easy image to PDF conversion tool."
+  />
 
-    <meta
-      name="description"
-      content="Convert images, PDFs and documents online instantly for free."
-    />
+  <meta
+    name="keywords"
+    content="image to pdf converter, jpg to pdf, png to pdf, convert image to pdf online, free pdf converter, compressits"
+  />
 
-  </Helmet>
+  <meta
+    property="og:title"
+    content="Image to PDF Converter Online Free - CompressIts"
+  />
+
+  <meta
+    property="og:description"
+    content="Convert JPG, PNG and image files to PDF instantly online for free."
+  />
+
+  <meta
+    property="og:url"
+    content="https://compressits.com/document-convert"
+  />
+
+  <link
+    rel="canonical"
+    href="https://compressits.com/document-convert"
+  />
+</Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-indigo-50 py-20 px-6">
 
@@ -395,12 +418,12 @@ else {
 
           </div>
 
-          <h1 className="text-6xl font-bold mb-6">
-  PDF Converter
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+  Image to PDF Converter
 </h1>
 
-<p className="text-gray-600 text-2xl">
-  Convert JPG, PNG and Images to PDF instantly
+<p className="text-gray-600 text-xl md:text-2xl">
+  Convert JPG, PNG and image files to PDF instantly online for free
 </p>
 
         </div>

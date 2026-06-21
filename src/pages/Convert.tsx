@@ -11,6 +11,8 @@ import {
 
 import UploadBox from "../components/ui/UploadBox";
 
+import { Helmet } from "react-helmet-async";
+
 export default function Convert() {
 
   const [originalImage, setOriginalImage] =
@@ -255,6 +257,42 @@ else {
   };
 
   return (
+  <>
+    <Helmet>
+      <title>
+        Image Converter Online Free | JPG, PNG, WEBP Converter - CompressIts
+      </title>
+
+      <meta
+        name="description"
+        content="Convert images online for free with CompressIts. Change JPG to PNG, PNG to JPG, JPG to WEBP, PNG to WEBP and more instantly."
+      />
+
+      <meta
+        name="keywords"
+        content="image converter, jpg to png, png to jpg, webp converter, jpg to webp, png to webp, free image converter online"
+      />
+
+      <meta
+        property="og:title"
+        content="Free Image Converter Online - CompressIts"
+      />
+
+      <meta
+        property="og:description"
+        content="Convert JPG, PNG and WEBP images instantly online for free."
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/convert"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/convert"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-purple-50 py-20 px-6">
 
@@ -429,5 +467,6 @@ else {
       </div>
 
     </div>
+    </>
   );
 }

@@ -1,9 +1,46 @@
+import { Helmet } from "react-helmet-async";
+
 export default function Disclaimer() {
 
-  return (
+ return (
+  <>
+    <Helmet>
+      <title>
+        Disclaimer | CompressIts
+      </title>
 
-   <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-6">
+      <meta
+        name="description"
+        content="Read the CompressIts disclaimer for information about service usage, no warranty, user responsibility, third-party services, advertising and limitation of liability."
+      />
 
+      <meta
+        name="keywords"
+        content="compressits disclaimer, legal disclaimer, file compression disclaimer, pdf compressor disclaimer, image converter disclaimer"
+      />
+
+      <meta
+        property="og:title"
+        content="Disclaimer | CompressIts"
+      />
+
+      <meta
+        property="og:description"
+        content="Read the CompressIts disclaimer for service usage, warranties, third-party services and liability information."
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/disclaimer"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/disclaimer"
+      />
+    </Helmet>
+
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-6">
   <div className="max-w-6xl mx-auto">
 
     {/* Header */}
@@ -334,7 +371,7 @@ export default function Disclaimer() {
     </div>
     </div>
 
-    
+    </>
 
   );
 }

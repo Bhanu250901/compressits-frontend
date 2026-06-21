@@ -5,11 +5,50 @@ import {
   Eye,
 } from "lucide-react";
 
-export default function PrivacyPolicy() {
+import { Helmet } from "react-helmet-async";
 
+
+
+  export default function PrivacyPolicy() {
   return (
+    <>
+      <Helmet>
+        <title>
+          Privacy Policy | CompressIts
+        </title>
 
-    <div className="min-h-screen bg-gray-50 py-20 px-6">
+        <meta
+          name="description"
+          content="Read the CompressIts Privacy Policy to understand how we collect, use, protect and manage account information, uploaded files, cookies, analytics and third-party services."
+        />
+
+        <meta
+          name="keywords"
+          content="compressits privacy policy, file privacy, pdf compressor privacy, image compressor privacy, data protection"
+        />
+
+        <meta
+          property="og:title"
+          content="Privacy Policy | CompressIts"
+        />
+
+        <meta
+          property="og:description"
+          content="Learn how CompressIts handles uploaded files, account data, analytics and privacy protection."
+        />
+
+        <meta
+          property="og:url"
+          content="https://compressits.com/privacy-policy"
+        />
+
+        <link
+          rel="canonical"
+          href="https://compressits.com/privacy-policy"
+        />
+      </Helmet>
+
+      <div className="min-h-screen bg-gray-50 py-20 px-6">
 
       <div className="max-w-6xl mx-auto">
 
@@ -175,6 +214,8 @@ export default function PrivacyPolicy() {
       </div>
 
     </div>
+
+    </>
   );
 }
 

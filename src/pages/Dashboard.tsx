@@ -14,6 +14,8 @@ import axios from "axios";
 
 import toast from "react-hot-toast";
 
+import { Helmet } from "react-helmet-async";
+
 export default function Dashboard() {
 
   const userEmail =
@@ -264,9 +266,13 @@ const rejectRequest =
 
 
   return (
+  <>
+    <Helmet>
+      <title>Dashboard | CompressIts</title>
+      <meta name="robots" content="noindex, nofollow" />
+    </Helmet>
 
     <div className="min-h-screen bg-gray-100 p-6">
-
       <div className="max-w-6xl mx-auto">
 
         {/* HEADER */}
@@ -795,5 +801,7 @@ const rejectRequest =
       </div>
 
     </div>
+
+  </>
   );
 }

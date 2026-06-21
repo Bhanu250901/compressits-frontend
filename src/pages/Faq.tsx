@@ -1,9 +1,45 @@
+import { Helmet } from "react-helmet-async";
 export default function FAQ() {
 
   return (
+  <>
+    <Helmet>
+      <title>
+        FAQ | CompressIts - Image Compression, PDF Tools & Rewards
+      </title>
+
+      <meta
+        name="description"
+        content="Find answers to common questions about CompressIts, including image compression, PDF compression, image to PDF conversion, reward coins, referrals, privacy and file security."
+      />
+
+      <meta
+        name="keywords"
+        content="compressits faq, image compressor faq, pdf compressor faq, image to pdf faq, reward coins, file security"
+      />
+
+      <meta
+        property="og:title"
+        content="CompressIts FAQ"
+      />
+
+      <meta
+        property="og:description"
+        content="Answers to common questions about image compression, PDF tools, rewards, referrals and file privacy on CompressIts."
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/faq"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/faq"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-6">
-
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -21,17 +57,13 @@ export default function FAQ() {
 
           </div>
 
-          <h1 className="text-6xl font-bold mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+  CompressIts FAQ
+</h1>
 
-            FAQ
-
-          </h1>
-
-          <p className="text-xl text-gray-600">
-
-            Find answers to common questions about compressits
-
-          </p>
+<p className="text-xl text-gray-600">
+  Find answers to common questions about image compression, PDF tools, rewards and file privacy.
+</p>
 
         </div>
 
@@ -176,9 +208,9 @@ export default function FAQ() {
 
             <p className="text-gray-700 text-lg leading-8">
 
-              compressits supports popular image formats including
-              JPG, PNG and WEBP along with PDF compression and
-              document conversion tools.
+             compressits currently supports popular image formats including
+JPG, PNG and WEBP, along with PDF compression and
+image to PDF conversion tools.
 
             </p>
 
@@ -231,7 +263,7 @@ export default function FAQ() {
 
             <p className="font-bold text-xl mt-4">
 
-              support@compressits.in
+             gandhambhanu2509@gmail.com
 
             </p>
 
@@ -265,6 +297,6 @@ export default function FAQ() {
       </div>
 
     </div>
-
+</>
   );
 }

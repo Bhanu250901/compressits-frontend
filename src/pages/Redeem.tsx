@@ -6,6 +6,8 @@ import axios from "axios";
 
 import toast from "react-hot-toast";
 
+import { Helmet } from "react-helmet-async";
+
 export default function Redeem() {
 
   const [coins, setCoins] =
@@ -62,7 +64,43 @@ export default function Redeem() {
     }
   };
 
-  return (
+ return (
+  <>
+    <Helmet>
+      <title>
+        Redeem Coins | CompressIts
+      </title>
+
+      <meta
+        name="description"
+        content="Redeem your CompressIts reward coins for UPI cash, Amazon gift cards, or Paytm wallet rewards."
+      />
+
+      <meta
+        name="keywords"
+        content="redeem coins, CompressIts rewards, UPI cash redeem, Amazon gift card redeem, Paytm reward"
+      />
+
+      <meta
+        property="og:title"
+        content="Redeem Coins | CompressIts"
+      />
+
+      <meta
+        property="og:description"
+        content="Redeem your earned reward coins on CompressIts."
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/redeem"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/redeem"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-6">
 
@@ -145,5 +183,6 @@ export default function Redeem() {
       </div>
 
     </div>
+    </>
   );
 }

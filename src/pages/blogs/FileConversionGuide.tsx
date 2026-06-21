@@ -1,11 +1,53 @@
 import { Link } from "react-router-dom";
 
+import { Helmet } from "react-helmet-async";
+
 export default function FileConversionGuide() {
 
-  return (
+ return (
+  <>
+    <Helmet>
+      <title>
+        How File Conversion Simplifies Work | CompressIts Blog
+      </title>
+
+      <meta
+        name="description"
+        content="Learn how file conversion improves compatibility, productivity, and workflow efficiency. Discover common file conversions like JPG to PNG, PNG to WEBP, and Image to PDF."
+      />
+
+      <meta
+        name="keywords"
+        content="file conversion guide, JPG to PNG, PNG to WEBP, image to PDF, Word to PDF, file format conversion, CompressIts blog"
+      />
+
+      <meta
+        property="og:title"
+        content="How File Conversion Simplifies Work | CompressIts Blog"
+      />
+
+      <meta
+        property="og:description"
+        content="Learn how converting files improves compatibility, productivity, and workflow efficiency."
+      />
+
+      <meta
+        property="og:type"
+        content="article"
+      />
+
+      <meta
+        property="og:url"
+        content="https://compressits.com/blog/file-conversion-guide"
+      />
+
+      <link
+        rel="canonical"
+        href="https://compressits.com/blog/file-conversion-guide"
+      />
+    </Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-green-50 py-20 px-6">
-
       <div className="max-w-5xl mx-auto">
 
         <div className="bg-white rounded-3xl shadow-xl p-10 mb-10">
@@ -226,7 +268,7 @@ export default function FileConversionGuide() {
       </div>
 
     </div>
-
+</>
   );
 }
 

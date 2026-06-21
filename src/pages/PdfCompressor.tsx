@@ -295,17 +295,40 @@ else {
 
 <>
   <Helmet>
+  <title>
+    PDF Compressor Online Free | Reduce PDF File Size - CompressIts
+  </title>
 
-    <title>
-      Free PDF Compressor | compressit
-    </title>
+  <meta
+    name="description"
+    content="Compress PDF files online for free with CompressIts. Reduce PDF file size quickly, securely and easily while keeping documents ready for sharing and storage."
+  />
 
-    <meta
-      name="description"
-      content="Compress PDF files online for free with fast and secure processing."
-    />
+  <meta
+    name="keywords"
+    content="pdf compressor, compress pdf online, reduce pdf size, free pdf compressor, compress pdf file, compressits"
+  />
 
-  </Helmet>
+  <meta
+    property="og:title"
+    content="PDF Compressor Online Free - CompressIts"
+  />
+
+  <meta
+    property="og:description"
+    content="Reduce PDF file size online for free with fast and secure PDF compression."
+  />
+
+  <meta
+    property="og:url"
+    content="https://compressits.com/pdf-compress"
+  />
+
+  <link
+    rel="canonical"
+    href="https://compressits.com/pdf-compress"
+  />
+</Helmet>
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-red-50 py-20 px-6">
 
       <div className="max-w-4xl mx-auto">
@@ -325,17 +348,13 @@ else {
 
           </div>
 
-          <h1 className="text-5xl font-bold mb-4">
+         <h1 className="text-5xl md:text-6xl font-bold mb-4">
+  PDF Compressor
+</h1>
 
-            PDF Compressor
-
-          </h1>
-
-          <p className="text-xl text-gray-600">
-
-            Compress large PDF files instantly
-
-          </p>
+<p className="text-xl text-gray-600">
+  Compress PDF files online and reduce file size instantly
+</p>
 
         </div>
 

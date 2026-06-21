@@ -1,10 +1,50 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function PdfcompressionBenefits() {
 
-return (
+ return (
+    <>
+      <Helmet>
+        <title>
+          Benefits of PDF Compression | CompressIts Blog
+        </title>
 
+        <meta
+          name="description"
+          content="Learn the benefits of PDF compression for storage, email sharing, website performance and productivity. Reduce PDF size online with CompressIts."
+        />
 
+        <meta
+          name="keywords"
+          content="PDF compression benefits, reduce PDF size, compress PDF online, smaller PDF files, PDF optimization, CompressIts blog"
+        />
+
+        <meta
+          property="og:title"
+          content="Benefits of PDF Compression | CompressIts Blog"
+        />
+
+        <meta
+          property="og:description"
+          content="Discover how PDF compression improves storage efficiency, file sharing speed, website performance and productivity."
+        />
+
+        <meta
+          property="og:type"
+          content="article"
+        />
+
+        <meta
+          property="og:url"
+          content="https://compressits.com/blog/pdf-compression-benefits"
+        />
+
+        <link
+          rel="canonical"
+          href="https://compressits.com/blog/pdf-compression-benefits"
+        />
+      </Helmet>
 <div className="min-h-screen bg-gradient-to-br from-gray-50 to-red-50 py-20 px-6">
 
   <div className="max-w-5xl mx-auto">
@@ -165,7 +205,7 @@ return (
   </div>
 
 </div>
-
+</>
 
 );
 }
