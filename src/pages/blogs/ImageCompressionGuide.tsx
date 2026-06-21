@@ -5,6 +5,60 @@ import { Helmet } from "react-helmet-async";
 export default function ImagecompressionGuide() {
 
   return (
+    <>
+  <Helmet>
+    <title>How to Compress Images Without Losing Quality | compressits</title>
+
+    <meta
+      name="description"
+      content="Learn how to compress JPG, PNG and WEBP images without losing quality. Improve website speed, SEO, storage efficiency and user experience with compressits."
+    />
+
+    <meta
+      name="keywords"
+      content="image compression, compress images online, JPG compression, PNG compression, WEBP compression, image optimizer, compressits"
+    />
+
+    <meta
+      property="og:title"
+      content="How to Compress Images Without Losing Quality | compressits"
+    />
+
+    <meta
+      property="og:description"
+      content="Professional guide to compress images without losing quality using JPG, PNG and WEBP optimization techniques."
+    />
+
+    <meta
+      property="og:type"
+      content="article"
+    />
+
+    <meta
+      property="og:url"
+      content="https://compressits.in/blog/image-compression-guide"
+    />
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content="How to Compress Images Without Losing Quality | compressits"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Learn how to compress images for websites, SEO, storage and faster sharing without losing quality."
+    />
+
+    <link
+      rel="canonical"
+      href="https://compressits.in/blog/image-compression-guide"
+    />
+  </Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-6">
 
@@ -215,5 +269,7 @@ export default function ImagecompressionGuide() {
 
     </div>
 
+</>
   );
+  
 }
