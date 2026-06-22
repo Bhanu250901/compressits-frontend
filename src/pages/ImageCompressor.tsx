@@ -320,18 +320,61 @@ if (
 
   return (
     <>
-  <Helmet>
+      <Helmet>
+        <title>Compress Image Online Free | JPG, PNG, WEBP Image Compressor | Compress Image Online Free to 10KB, 20KB, 50KB, 100KB | compressits</title>
 
-    <title>
-      Free Image Compressor | compressit
-    </title>
+        <meta
+          name="description"
+          content="Compress image online for free with compressits. Reduce JPG, JPEG, PNG and WEBP image size without losing quality. Fast, secure and easy image compressor."
+        />
 
-    <meta
-      name="description"
-      content="Compress JPG, PNG and WEBP images online for free without losing quality."
-    />
+        <meta name="robots" content="index, follow" />
 
-  </Helmet>
+        <link
+          rel="canonical"
+          href="https://compressits.com/image-compress"
+        />
+
+        <meta
+          property="og:title"
+          content="Compress Image Online Free | JPG, PNG, WEBP Image Compressor | compressits"
+        />
+
+        <meta
+          property="og:description"
+          content="Reduce JPG, JPEG, PNG and WEBP image size online for free. Compress images quickly without losing quality using compressits."
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:url"
+          content="https://compressits.com/image-compress"
+        />
+
+        <meta
+          property="og:site_name"
+          content="compressits"
+        />
+
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+
+        <meta
+          name="twitter:title"
+          content="Compress Image Online Free | compressits"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Compress JPG, JPEG, PNG and WEBP images online free without losing quality."
+        />
+      </Helmet>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-6">
 
